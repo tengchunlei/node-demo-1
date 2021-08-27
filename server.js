@@ -27,7 +27,7 @@ var server = http.createServer(function(request, response){
     response.write(`
            <!DOCTYPE html>
            <head>
-           <link rel="stylesheet" href="/x">
+           <link rel="stylesheet" href="/style.css">
            </head> 
            <body>
            <h1>中国必将收复台湾</h1>
@@ -35,7 +35,7 @@ var server = http.createServer(function(request, response){
          
     `)
     response.end()
-  } else if(path === '/x'){
+  } else if(path === '/style.css'){
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/css;charset=utf-8')
     response.write(`body{color: red;}`)
